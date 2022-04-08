@@ -1,0 +1,25 @@
+<table class = "table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th> Nom </th>
+            <th> Adresse </th>
+            <th> Activite </th>
+            <th> Domaine </th>
+        
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let entreprise of entreprises" >
+            <td> {{ entreprise.nom }} </td>
+            <td> {{ entreprise.adresse }} </td>
+            <td> {{ entreprise.activite }} </td>
+            <td> {{ entreprise.domaine }} </td>
+           
+    
+            <td>
+                
+                <button class = "btn btn-primary" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+  </table>
